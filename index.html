@@ -5,70 +5,88 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/style.css">
   
   <title>Frontend Mentor | FAQ Accordion Card</title>
 </head>
+
 <body>
-
   <main class="content__wrapper">
-
-    <section class="card__wrapper">
-
-      <div class="card__images">
-        <img src="images/bg-pattern-desktop.svg" alt="Background" class="card__images--bg">
-      </div>
+  <section class="card">
+    <div class="card__images">
+      <img src="images/bg-pattern-desktop.svg" alt="Background" class="card__images--bg">
       <img src="images/illustration-woman-online-desktop.svg" alt="Woman" class="card__images--woman">
-      </div>
       <img src="images/illustration-box-desktop.svg" alt="Background image" class="card__images--box">
-      </div>
+    </div>
 
-      <div class="card__text">
-        <h1 class="card__text__header">FAQ</h1>
-        <ul class="card__text__box">
-          <li class="card__text__box__li">
-            <h2 class="card__text__box__li--que">How many team members can I invite?</h2>
-            <span class="card__text__box__li--icon"><img src="images/icon-arrow-down.svg" alt="Arrow icon"></span>
-            <p class="card__text__box__li--ans">You can invite up to 2 additional users on the Free plan. There is no limit on team members for the Premium plan.</p>
-          </li>
+    <div class="card__text">
+      <h1 class="card__text__header">FAQ</h1>
+      <ul class="card__text__box">
+        <li class="card__text__box__li">
+          <div class="card__text__box__li__que">
+            <h2 class="card__text__box__li__que--h">How many team members can I invite?</h2> 
+            <span class="card__text__box__li__que--icon"><img src="images/icon-arrow-down.svg" alt="Arrow icon"></span> 
+          </div>
+          <p class="card__text__box__li__ans">You can invite up to 2 additional users on the Free plan. There is no limit on team members for the Premium plan.</p>
+          <hr class="card__text__box__li__hr">
+        </li>
 
-          <li class="card__text__box__li">
-            <h2 class="card__text__box__li--que">What is the maximum file upload size?</h2>
-            <span class="card__text__box__li--icon"><img src="images/icon-arrow-down.svg" alt="Arrow icon"></span>
-            <p class="card__text__box__li--ans">No more than 2GB. All files in your account must fit your allotted storage space.</p>
-          </li>
+        <li class="card__text__box__li">
+          <div class="card__text__box__li__que">
+            <h2 class="card__text__box__li__que--h">What is the maximum file upload size?</h2> 
+            <span class="card__text__box__li__que--icon"><img src="images/icon-arrow-down.svg" alt="Arrow icon"></span> 
+          </div>
+          <p class="card__text__box__li__ans">No more than 2GB. All files in your account must fit your allotted storage space.</p>
+          <hr class="card__text__box__li__hr">
+        </li>
 
-          <li class="card__text__box__li">
-            <h2 class="card__text__box__li--que">How many team members can I invite?</h2>
-            <span class="card__text__box__li--icon"><img src="images/icon-arrow-down.svg" alt="Arrow icon"></span>
-            <p class="card__text__box__li--ans"> You can invite up to 2 additional users on the Free plan. There is no limit on team members for the Premium plan.</p>
-          </li>
+        <li class="card__text__box__li">
+          <div class="card__text__box__li__que">
+            <h2 class="card__text__box__li__que--h">How many team members can I invite?</h2> 
+            <span class="card__text__box__li__que--icon"><img src="images/icon-arrow-down.svg" alt="Arrow icon"></span> 
+          </div>
+          <p class="card__text__box__li__ans">You can invite up to 2 additional users on the Free plan. There is no limit on team members for the Premium plan.</p>
+          <hr class="card__text__box__li__hr">
+        </li>
 
-          
-          <li class="card__text__box__li">
-            <h2 class="card__text__box__li--que">How do I reset my password?</h2>
-            <span class="card__text__box__li--icon"><img src="images/icon-arrow-down.svg" alt="Arrow icon"></span>
-            <p class="card__text__box__li--ans">Click “Forgot password” from the login page or “Change password” from your profile page. A reset link will be emailed to you.</p>
-          </li>
+        <li class="card__text__box__li">
+          <div class="card__text__box__li__que">
+            <h2 class="card__text__box__li__que--h">How do I reset my password?</h2> 
+            <span class="card__text__box__li__que--icon"><img src="images/icon-arrow-down.svg" alt="Arrow icon"></span> 
+          </div>
+          <p class="card__text__box__li__ans">Click “Forgot password” from the login page or “Change password” from your profile page. A reset link will be emailed to you.</p>
+          <hr class="card__text__box__li__hr">
+        </li>
 
-          <li class="card__text__box__li">
-            <h2 class="card__text__box__li--que">Can I cancel my subscription?</h2>
-            <span class="card__text__box__li--icon"><img src="images/icon-arrow-down.svg" alt="Arrow icon"></span>
-            <p class="card__text__box__li--ans">Yes! Send us a message and we’ll process your request no questions asked.</p>
-          </li>
+        <li class="card__text__box__li">
+          <div class="card__text__box__li__que">
+            <h2 class="card__text__box__li__que--h">Can I cancel my subscription?</h2> 
+            <span class="card__text__box__li__que--icon"><img src="images/icon-arrow-down.svg" alt="Arrow icon"></span> 
+          </div>
+          <p class="card__text__box__li__ans">Yes! Send us a message and we’ll process your request no questions asked.</p>
+          <hr class="card__text__box__li__hr">
+        </li>
 
-          <li class="card__text__box__li">
-            <h2 class="card__text__box__li--que">Do you provide additional support?</h2>
-            <span class="card__text__box__li--icon"><img src="images/icon-arrow-down.svg" alt="Arrow icon"></span>
-            <p class="card__text__box__li--ans">Chat and email support is available 24/7. Phone lines are open during normal business hours.</p>
-          </li>
-        </ul>
-      </div>
-    </section>
-
+        <li class="card__text__box__li">
+          <div class="card__text__box__li__que">
+            <h2 class="card__text__box__li__que--h">Do you provide additional support?</h2> 
+            <span class="card__text__box__li__que--icon"><img src="images/icon-arrow-down.svg" alt="Arrow icon"></span> 
+          </div>
+          <p class="card__text__box__li__ans">Chat and email support is available 24/7. Phone lines are open during normal business hours.</p>
+          <hr class="card__text__box__li__hr">
+        </li>
+      </ul>
+    </div>
+  </section>
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+   Coded by <a href="#">Your Name Here</a>.
   </div>
   </main>
 </body>
+
 </html>

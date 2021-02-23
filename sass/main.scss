@@ -1,2 +1,138 @@
-.attribution { font-size: 11px; text-align: center; }
+//VARIABLES
+
+$text-color-1: hsl(238, 29%, 16%);
+$text-color-2: hsl(14, 88%, 65%);
+$text-color-grey-dark: hsl(237, 12%, 33%);
+$text-color-grey-light: hsl(240, 6%, 50%);
+$background-color-1: hsl(273, 75%, 66%);
+$background-color-2: hsl(240, 73%, 65%);
+$divider-color: hsl(240, 5%, 91%);
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    box-sizing: border-box;
+    font-size: 12px;
+    font-family: 'Kumbh Sans', sans-serif;
+    height: 100%;
+    background-color: $background-color-2;
+    background-image: linear-gradient($background-color-1, $background-color-2);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.content__wrapper {
+    height: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column-reverse;
+
+}
+
+.card {
+    background-color: white;
+    height: 500px;
+    width: 900px; 
+    top: 50%;
+    left: 50%;
+    margin: 0;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    border-radius: 25px;
+
+    display: flex;
+}
+
+.card__images {
+    height: 100%;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+
+    &--bg {
+        position: absolute;
+        left: -120%;
+        top: -60%;
+    }
+    
+    &--woman {
+        position: absolute;
+        top: 50%;
+        margin: 0;
+        transform: translateY(-50%);
+        margin-left: -16%;
+    }
+
+    &--box {
+        position: fixed;
+        top: 41%;
+        left: -10.3%;
+    }
+}
+
+.card__text {
+    width: 750px;
+    padding: 70px 90px 70px 0px;
+
+    &__header {
+        color: $text-color-1;
+        font-size: 36px;
+        padding-bottom: 20px;
+        letter-spacing: 3px;
+        font-weight: 700;
+    }
+
+    &__box {
+
+        &__li {
+            list-style-type: none;
+
+            &__que {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding-top: 7px;
+                padding-bottom: 7px;
+
+                &--h {
+                    color: $text-color-grey-dark;
+                    font-size: 14px;
+                    padding: 10px 0px;
+                    font-weight: 400;
+                    letter-spacing: 0.5px;
+                    
+                }
+
+                &--icon {
+
+                }
+            }
+
+            &__ans {
+                color: $text-color-grey-light;
+                display: none;
+            }
+
+            &__hr {
+                height: 1px;
+                border: none;
+                background-color: $divider-color;
+                width: 105%;
+            }
+        }
+    }
+}
+
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+}
 .attribution a { color: hsl(228, 45%, 44%); }
