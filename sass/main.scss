@@ -113,12 +113,14 @@ body {
                 }
 
                 &--icon {
-
+                    border: none;
+                    background-color: transparent;
                 }
             }
 
             &__ans {
                 color: $text-color-grey-light;
+                padding-bottom: 20px;
                 display: none;
             }
 
@@ -130,6 +132,14 @@ body {
             }
         }
     }
+}
+
+#answer1.show {
+    display: block;
+}
+
+#button1.bold {
+    font-weight: bold;
 }
 
 .attribution { 
