@@ -68,7 +68,10 @@ body {
 
 .card__text {
   width: 750px;
+  height: 500px;
   padding: 70px 90px 70px 0px;
+  overflow-x: hidden;
+  overflow-y: auto;
 }
 .card__text__header {
   color: #1d1e35;
@@ -86,7 +89,9 @@ body {
   align-items: center;
   padding-top: 7px;
   padding-bottom: 7px;
+  cursor: pointer;
 }
+
 .card__text__box__li__que--h {
   color: #4a4b5e;
   font-size: 14px;
@@ -94,13 +99,20 @@ body {
   font-weight: 400;
   letter-spacing: 0.5px;
 }
+
+.card__text__box__li__que--h:hover {
+  font-weight: 700;
+  color: hsl(14, 88%, 65%);
+}
+
 .card__text__box__li__que--icon {
   border: none;
   background-color: transparent;
 }
+
 .card__text__box__li__ans {
-  color: #787887;
-  padding-bottom: 20px;
+  color: hsl(240, 6%, 50%);
+  padding-bottom: 15px;
 }
 .card__text__box__li__hr {
   height: 1px;
@@ -111,6 +123,15 @@ body {
 
 .hidden {
   display: none;
+}
+
+.bold {
+  font-weight: 700;
+}
+
+.rotate {
+  transform: rotate(-180deg);
+  transition: 0.5s;
 }
 
 .attribution {
