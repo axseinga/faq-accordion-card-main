@@ -48,11 +48,13 @@ body {
   position: relative;
   overflow: hidden;
 }
+
 .card__images--bg {
   position: absolute;
   left: -120%;
   top: -60%;
 }
+
 .card__images--woman {
   position: absolute;
   top: 50%;
@@ -60,6 +62,7 @@ body {
   transform: translateY(-50%);
   margin-left: -16%;
 }
+
 .card__images--box {
   position: fixed;
   top: 41%;
@@ -73,6 +76,7 @@ body {
   overflow-x: hidden;
   overflow-y: auto;
 }
+
 .card__text__header {
   color: #1d1e35;
   font-size: 36px;

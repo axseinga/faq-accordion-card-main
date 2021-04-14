@@ -3,6 +3,15 @@ const text = document.querySelectorAll(".text");
 const que = document.querySelectorAll(".card__text__box__li__que--h");
 const arrow = document.querySelectorAll(".arrow");
 
+for (let i = 0; i < btn.length; i++) {
+  btn[i].addEventListener("click", function () {
+    text[i].classList.toggle("hidden");
+    que[i].classList.toggle("bold");
+    arrow[i].classList.toggle("rotate");
+  });
+}
+
+/*
 btn[0].addEventListener("click", function () {
   text[0].classList.toggle("hidden");
   que[0].classList.toggle("bold");
@@ -38,3 +47,4 @@ btn[5].addEventListener("click", function () {
   que[5].classList.toggle("bold");
   arrow[5].classList.toggle("rotate");
 });
+*/
