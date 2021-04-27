@@ -1,15 +1,24 @@
-const btn = document.querySelectorAll(".btn");
-const text = document.querySelectorAll(".text");
-const que = document.querySelectorAll(".card__text__box__li__que--h");
-const arrow = document.querySelectorAll(".arrow");
+const btns = Array.from(document.querySelectorAll(".btn"));
+const texts = document.querySelectorAll(".text");
+const ques = document.querySelectorAll(".card__text__box__li__que--h");
+const arrows = document.querySelectorAll(".arrow");
 
-for (let i = 0; i < btn.length; i++) {
-  btn[i].addEventListener("click", function () {
-    text[i].classList.toggle("hidden");
-    que[i].classList.toggle("bold");
-    arrow[i].classList.toggle("rotate");
+btns.forEach((btn, i) => {
+  btn.addEventListener("click", function () {
+    texts[i].classList.toggle("hidden");
+    ques[i].classList.toggle("bold");
+    arrows[i].classList.toggle("rotate");
+  });
+});
+
+/*for (let i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function () {
+    texts[i].classList.toggle("hidden");
+    ques[i].classList.toggle("bold");
+    arrows[i].classList.toggle("rotate");
   });
 }
+*/
 
 /*
 btn[0].addEventListener("click", function () {
